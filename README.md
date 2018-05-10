@@ -4,13 +4,13 @@
 * sudo apt-get update
 * sudo apt-get install ffmpeg
 
-###install ruby-2.3.4
+### install ruby-2.3.4
 
-###From root directory of app
+### From root directory of app
 * run bundle install
 
-###Create database
+### Create database
 * rake db:create db:migrate
 
-###Run server on development  
+### Run server on development  
 * rails s
