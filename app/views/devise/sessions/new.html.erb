@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="row">
+      <div class="container" id="formContainer">
+          <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+            <h3 class="form-signin-heading">Sign in</h3>
+            <a href="#" id="flipToRecover" class="flipLink">
+              <div id="triangle-topright"></div>
+            </a>
+            <%= f.label :email %><br />
+            <%= f.email_field :email, autofocus: true, autocomplete: "email", :class=> "form-control" %>
+              <%= f.label :password %><br />
+              <%= f.password_field :password, autocomplete: "off", :class=> "form-control" %>
+              <br>
+              <div class="actions">
+                <%= f.submit "Log in", :class=> "btn btn-lg btn-primary btn-block" %>
+              </div>
+          <% end %>
+
+        </div> <!-- /container -->
+      <%= render "devise/shared/links" %>
+
+  </div>
+</div>
