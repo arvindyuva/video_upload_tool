@@ -1,0 +1,8 @@
+example_id                                          | status | run_time        |
+--------------------------------------------------- | ------ | --------------- |
+./spec/controllers/videos_controller_spec.rb[1:1:1] | passed | 0.02618 seconds |
+./spec/controllers/videos_controller_spec.rb[1:1:2] | passed | 0.01325 seconds |
+./spec/controllers/videos_controller_spec.rb[1:2:1] | passed | 0.12976 seconds |
+./spec/models/user_spec.rb[1:1]                     | passed | 0.03441 seconds |
+./spec/models/video_spec.rb[1:1]                    | passed | 0.00176 seconds |
+./spec/models/video_spec.rb[1:2]                    | passed | 0.02817 seconds |

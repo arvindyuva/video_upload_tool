@@ -1,25 +1,22 @@
+
 <div class="container">
- 
-</div><!--./container -->
-<div class="clearfix"></div>
-<div class="container">
+  <div class="content-wrapper">
     <div class="row">
+      <div class="video-wrapper">
         <div class="col-md-4">
             <h4><%= @video.title%></h4>
             <p>
                 <%= @video.description %>
             </p>
-            <%= image_tag @video.video.url(:preview), style: 'width:200px;', class: "img-responsive center-block"  %>
-        </div><!--.col -->
-        
+            <%#= image_tag @video.video.url(:preview), style: 'width:200px;', class: "img-responsive center-block"  %>
+        </div>
         <div class="col-md-8">
-            <div class="vid">
-                <iframe width="560" height="315" src=<%=@video.video.url %> allowfullscreen=""></iframe>
-            </div><!--./vid -->
-            <span><%= @video.impressionist_count(:filter=>:ip_address) %> Views</span>
-            
-        </div><!--.col -->
-        
-    </div><!--./row -->
-    
-</div><!--./container -->
+          <div class="vid">
+            <iframe width="100%" height="424" src=<%=@video.video.url %> allowfullscreen=""></iframe>
+          </div>
+          <span class="views-box"><%= @video.impressionist_count %> Views</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
